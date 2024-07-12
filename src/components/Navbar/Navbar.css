@@ -1,0 +1,67 @@
+.nav {
+    background-color: #1e0448;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.2);
+    display: none;
+    justify-content: flex-end; 
+}
+.navbar.show {
+    display: flex;
+}
+.nav-content {
+    width: 20em;
+    background-color: white;
+    overflow-y: auto; 
+    max-height: 100vh; 
+}
+
+/* Custom scrollbar styles */
+.nav-content::-webkit-scrollbar {
+    width: 12px; 
+}
+
+.nav-content::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+.nav-content::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px; 
+}
+
+.nav-content::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+/* Scrollbar styles for Firefox */
+.nav-content {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1; 
+}
+
+
+.menu {
+    display: none;
+}
+.close{
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
